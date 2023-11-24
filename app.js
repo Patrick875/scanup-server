@@ -8,7 +8,7 @@ const app = express();
 
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors({origin:"https://65608a3d2098600ac1a1d17d--resilient-belekoy-1df16d.netlify.app/"}));
+app.use(cors({origin:"https://resilient-belekoy-1df16d.netlify.app"}));
 app.options("*", cors());
 
 app.use("/api/v1/", userRouter);
