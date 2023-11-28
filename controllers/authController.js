@@ -43,6 +43,7 @@ exports.signup = async (req, res) => {
 			nationalId,
 			department,
 			password,
+			role
 		});
 		return res.status(201).json({
 			status: "success",
