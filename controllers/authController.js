@@ -26,8 +26,7 @@ const sendToken = (user, statusCode, req, res) => {
 	});
 };
 exports.signup = async (req, res) => {
-	const { email, firstName, lastName, tel, role, nationalId, department } =
-		req.body;
+	const { email, firstName, lastName, tel, nationalId, department } = req.body;
 	if (!email) {
 		return res.status(400).json({
 			message: "email is required ",
